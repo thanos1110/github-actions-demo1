@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
       - name: Set up SSH
-        uses: appleboy/ssh-agent@v1.0.3
+        uses: appleboy/ssh-agent@v1.0.4
         with:
           host: ${{ secrets.SSH_HOST }}
           username: root
